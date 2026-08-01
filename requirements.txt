@@ -1,0 +1,9 @@
+# Python teams: list every package your src/run_all.py imports, pinned where possible.
+# Example:
+# pandas==2.2.2
+# numpy==1.26.4
+# scikit-learn==1.5.0
+# matplotlib==3.9.0
+#
+# R teams: ignore this file. Pin your packages with renv.lock (renv::snapshot())
+# or an install.R script instead.

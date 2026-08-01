@@ -1,0 +1,32 @@
+# manifest.yml = inventory of what you built
+# Lists every output your submission produces, and which tracks and problem
+# statements you addressed. The evaluation pipeline checks this against what is
+# actually in the repo (check_manifest.py). Any mismatch becomes a note to the
+# jury, so keep this accurate and up to date.
+
+team_name: "REPLACE_WITH_TEAM_NAME"
+
+tracks_addressed:
+  - "Data Insights & Visualization"   # keep only the track(s) you actually worked on
+  # - "Predictive Analytics"
+  # - "Policy & Intervention Design"
+
+problem_statements:
+  - "REPLACE_WITH_PROBLEM_STATEMENT_ID_OR_TITLE"
+
+# List every file src/run_all.py writes to outputs/ that you want the jury to see.
+# Only list files that actually exist in your repo. The pipeline checks each one.
+outputs: []
+  # - file: "outputs/tables/example_table.csv"
+  #   description: "REPLACE: what this file contains"
+  # - file: "outputs/figures/dashboard.html"
+  #   description: "REPLACE: interactive dashboard, static export"
+  # If your track includes a predictive model, also list its evaluation file:
+  # - file: "outputs/predictions/predictions.csv"
+  #   description: "Predicted scores for the holdout set"
+  #   evaluation_file: "outputs/tables/model_metrics.csv"
+
+# Only include this section if you used a dataset beyond what the organizers gave you.
+external_datasets: []
+# - file: "data/external/census_2021.csv"
+#   source: "REPLACE: where this came from"

@@ -1,0 +1,42 @@
+{
+  "team_name": "REPLACE_WITH_TEAM_NAME",
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "description": "REPLACE. Example: 'Grade 5 girls in X district score Y percent lower on average than boys in the ABC GP Maths Contest'",
+      "supporting_output": "outputs/tables/gender_gap.csv",
+      "verification_method": "programmatic",
+      "claimed_value": "Y",
+      "unit": "percent",
+      "verification_detail": {
+        "filters": { "district": "X", "grade": 5, "year": "ABC" },
+        "group_by": "gender",
+        "aggregate": "mean",
+        "column": "Score"
+      }
+    },
+    {
+      "claim_id": "claim-2",
+      "description": "REPLACE. Example: 'Our regression model predicts Grade 4 scores with R2 = 0.XY on a held-out test set'",
+      "supporting_output": "outputs/tables/model_metrics.csv",
+      "verification_method": "reproducible",
+      "claimed_value": "0.XY",
+      "unit": "ratio",
+      "verification_detail": {
+        "expected_output_file": "outputs/tables/model_metrics.csv",
+        "metric_to_check": "r2",
+        "random_seed": 42,
+        "test_split": 0.2
+      }
+    },
+    {
+      "claim_id": "claim-3",
+      "description": "REPLACE. A qualitative or policy claim that cannot be reduced to one number. Example: 'Block-level mentoring reduced learning gaps in comparable districts, per NGO reports'",
+      "verification_method": "jury_review",
+      "verification_detail": {
+        "reasoning": "REPLACE. Why this needs jury judgement rather than a programmatic or reproducible check",
+        "external_dataset": "data/external/REPLACE_IF_ANY.csv"
+      }
+    }
+  ]
+}

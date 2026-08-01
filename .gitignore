@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+
+# Office / LibreOffice lock and temp files
+.~lock.*#
+~$*
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+renv/library/
+
+# Never commit the dataset. The repo is public, and the data contains
+# student assessment records. Keep all provided and derived data under data/.
+data/*
+!data/README.md
