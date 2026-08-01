@@ -59,7 +59,7 @@ outputs/            # created by the notebooks
 
 Run `01` first — `02` reads its district × grade × competency cache. Every chart is saved to `outputs/figures/` as well as shown inline. Seed is fixed at 42.
 
-**The raw primary Excel files are not committed.** The district-level CSVs written to `outputs/` are.
+**The main dataset is located in the `Primary_Dataset` directory, which is git-ignored to protect the raw records.** The district-level CSVs written to `outputs/` are committed.
 
 ---
 
