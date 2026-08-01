@@ -19,3 +19,5 @@ renv/library/
 # student assessment records. Keep all provided and derived data under data/.
 data/*
 !data/README.md
+Primary_Dataset
+Secondary_Datset/
