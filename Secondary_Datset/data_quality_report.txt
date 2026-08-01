@@ -1,0 +1,12 @@
+DATA QUALITY REPORT
+============================================================
+
+C1: Raw counts scale with district size (Mobile Phone Connections vs Total No. of Habitations r=0.705), but only weakly against child population directly (r=0.078). All count-based components normalised per 1,000 children (6-14).
+C2: Internet Connections excluded by default (INCLUDE_INTERNET=False). Districts with internet == telephone figure: ['Hassan', 'Kodagu', 'Chamarajanagara', 'Chikkaballapura']. Ratio outliers: ['Koppal', 'Bengaluru (Urban)'].
+C3: Dropout Ratio (%, source) dropped -- correlates at r=0.9998 with the computed out-of-school rate, which is used instead.
+C4: No ratios computed across 10.3a/10.4a/10.5a, or between them and 10.8 -- these sheets do not share a school universe (see notebook Section C4 for the enrolment-total evidence).
+C5: Students-per-school within 10.3a ranges 15-296 -- not used as a crowding proxy.
+C6: Zero out-of-school children (implausible): ['Raichuru', 'Ballari', 'Vijayanagara']. Excluded from that component, mean-imputed.
+G: ASER covers 30 districts, KAG covers 31. No ASER counterpart for: ['Vijayanagara'] (expected -- Vijayanagara split from Ballari/Bellary in 2021, not yet reported separately by ASER).
+
+SUMMARY: 7 distinct districts had at least one data-quality exclusion applied (Ballari, Chamarajanagara, Chikkaballapura, Hassan, Kodagu, Raichuru, Vijayanagara).
